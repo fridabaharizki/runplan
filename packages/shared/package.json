@@ -1,0 +1,19 @@
+{
+  "name": "@runplan/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev:api": "npm run dev -w @runplan/api",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "oxlint"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  }
+}
