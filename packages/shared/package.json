@@ -15,5 +15,6 @@
   },
   "dependencies": {
     "zod": "^4.6.7"
-  }
+  },
+  "dev:web": "npm run dev -w @runplan/web"
 }
