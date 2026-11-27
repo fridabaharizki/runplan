@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 const envSchema = z.object({
-    PORT: z.coerce.number().default(3000),
+    PORT: z.coerce.number().default(5000),
     WEB_ORIGINS: z
         .string()
         .transform((value) => value.split(",").map((origin) => origin.trim()).filter(Boolean))
